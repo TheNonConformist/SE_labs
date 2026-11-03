@@ -5,6 +5,7 @@ Software Engineering lab submissions.
 | Lab | Topic | Folder |
 |---|---|---|
 | Lab 1 | Requirements Engineering | [`Lab1-Requirements-Engineering/`](Lab1-Requirements-Engineering/) |
+| Lab 5 | Static Code Analysis | [`Lab5-Static-Code-Analysis/`](Lab5-Static-Code-Analysis/) |
 | Bubble Bobble Repair Lab | Pygame debugging, feature implementation and testing | [`BubbleBobble-Repair-Lab/`](BubbleBobble-Repair-Lab/) |
 
 Each lab folder keeps its original deliverables, source and notes.
