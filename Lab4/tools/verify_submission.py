@@ -55,8 +55,8 @@ def main():
     required = [
         "game.py",
         "legacy/game_before.py",
-        "media/before.mp4",
-        "media/after.mp4",
+        "Before.mp4",
+        "After.mp4",
         "media/before_poster.png",
         "media/after_poster.png",
         "docs/LLM_CHAT_LOG.md",
@@ -70,7 +70,7 @@ def main():
         check(f"file exists: {relative}", path.is_file(), f"{path.stat().st_size if path.exists() else 0} bytes")
 
     for mode in ("before", "after"):
-        path = ROOT / "media" / f"{mode}.mp4"
+        path = ROOT / f"{mode.capitalize()}.mp4"
         if not path.exists():
             check(f"{mode}.mp4 probe", False, "missing")
             continue

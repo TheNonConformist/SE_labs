@@ -8,8 +8,8 @@ while the output video is 30 fps (600 simulation steps -> 300 frames).
 
 Usage
 -----
-    python tools/record_demo.py --mode before --out media/before.mp4
-    python tools/record_demo.py --mode after  --out media/after.mp4
+    python tools/record_demo.py --mode before --out Before.mp4
+    python tools/record_demo.py --mode after  --out After.mp4
 
 ``before`` loads ``legacy/game_before.py`` (the untouched original), while
 ``after`` loads the completed ``game.py`` from the repository root.

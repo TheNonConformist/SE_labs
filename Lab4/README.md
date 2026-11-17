@@ -6,8 +6,8 @@ Single-file Pygame Bubble Bobble clone, repaired and extended for the Software E
 
 | # | Required deliverable | File | Status |
 |---|---|---|---|
-| 1 | 10-second gameplay video **before** the changes, showing the bug | [`media/before.mp4`](media/before.mp4) | 10.0 s · 800×600 · H.264 · 300 frames |
-| 2 | 10-second gameplay video **after** the changes, showing the fix and new features | [`media/after.mp4`](media/after.mp4) | 10.0 s · 800×600 · H.264 · 300 frames |
+| 1 | 10-second gameplay video **before** the changes, showing the bug | [`Before.mp4`](Before.mp4) | 10.0 s · 800×600 · H.264 · 300 frames |
+| 2 | 10-second gameplay video **after** the changes, showing the fix and new features | [`After.mp4`](After.mp4) | 10.0 s · 800×600 · H.264 · 300 frames |
 | 3 | Complete LLM chat history (the “Chat/LLM used page”) | [`docs/LLM_CHAT_LOG.md`](docs/LLM_CHAT_LOG.md) | Full transcript + [raw JSON export](docs/chat_export.json) |
 
 A one-page hand-in view is in [`SUBMISSION.md`](SUBMISSION.md). Technical write-up: [`docs/REPAIR_REPORT.md`](docs/REPAIR_REPORT.md).
@@ -61,15 +61,15 @@ The suite has **14 checks** covering the squared-radius trap, tint interpolation
 Both MP4s are generated from the real game loop, not screen-captured by hand:
 
 ```bash
-python tools/record_demo.py --mode before --out media/before.mp4 --poster media/before_poster.png
-python tools/record_demo.py --mode after  --out media/after.mp4  --poster media/after_poster.png
+python tools/record_demo.py --mode before --out Before.mp4 --poster media/before_poster.png
+python tools/record_demo.py --mode after  --out After.mp4  --poster media/after_poster.png
 ```
 
 The recorder seeds `random`, steps the simulation at 60 Hz, renders at 30 fps, and pipes raw RGB frames to ffmpeg. The “before” run loads the untouched `legacy/game_before.py`; the “after” run loads `game.py`. It also prints the observed trap count and final score/lives/fruit state as an assertion that the intended behaviour happened.
 
 ### Video storyboard
 
-**Before — `media/before.mp4`**
+**Before — `Before.mp4`**
 
 | Time | Shot |
 |---|---|
@@ -79,7 +79,7 @@ The recorder seeds `random`, steps the simulation at 60 Hz, renders at 30 fps, a
 | 6.3–9.0 s | Attempt 3: same input, same result |
 | 9.0–10.0 s | Result card: **0 traps / 3 attempts**, `24 * 2` vs `24 * 24` |
 
-**After — `media/after.mp4`**
+**After — `After.mp4`**
 
 | Time | Shot |
 |---|---|

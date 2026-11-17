@@ -209,8 +209,8 @@ The “before” count is 0 because the original threshold misses the scripted 2
 ## 8. Reproducing the recordings
 
 ```bash
-python tools/record_demo.py --mode before --out media/before.mp4 --poster media/before_poster.png
-python tools/record_demo.py --mode after  --out media/after.mp4  --poster media/after_poster.png
+python tools/record_demo.py --mode before --out Before.mp4 --poster media/before_poster.png
+python tools/record_demo.py --mode after  --out After.mp4  --poster media/after_poster.png
 ```
 
 The recorder uses `SDL_VIDEODRIVER=dummy`, seeds `random` with `20261020`, steps at 60 Hz and writes every second step at 30 fps to ffmpeg. The before mode imports `legacy/game_before.py`; the after mode imports `game.py`. Captions and markers are drawn on top of the real rendered game, so the MP4s are evidence of the actual behaviour rather than mock-ups.
