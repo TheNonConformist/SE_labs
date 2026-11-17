@@ -5,6 +5,7 @@ Software Engineering lab submissions.
 | Lab | Topic | Folder |
 |---|---|---|
 | Lab 1 | Requirements Engineering | [`Lab1-Requirements-Engineering/`](Lab1-Requirements-Engineering/) |
+| Lab 2 | Jira Project Templates (Scrum / Kanban / Bug Tracking) | [`Lab2_jira/`](Lab2_jira/) |
 | Lab 5 | Static Code Analysis | [`Lab5-Static-Code-Analysis/`](Lab5-Static-Code-Analysis/) |
 | Lab 6 | Code and Branch Coverage | [`Lab6-Code-Branch-Coverage/`](Lab6-Code-Branch-Coverage/) |
 | Bubble Bobble Repair Lab | Pygame debugging, feature implementation and testing | [`BubbleBobble-Repair-Lab/`](BubbleBobble-Repair-Lab/) |
